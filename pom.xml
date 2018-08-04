@@ -242,6 +242,14 @@
             <artifactId>jedis</artifactId>
             <version>2.9.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
+
     </dependencies>
 
 
@@ -266,7 +274,6 @@
                 <configuration>
                     <source>1.8</source><!-- 源代码使用的JDK版本 -->
                     <target>1.8</target><!-- 需要生成的目标class文件的编译版本 -->
-                    <skipTests>true</skipTests><!-- 跳过测试 -->
                     <encoding>UTF-8</encoding><!-- 字符集编码 -->
                     <compilerArguments>
                         <extdirs>${project.basedir}/src/main/webapp/WEB-INF/lib</extdirs>
@@ -276,6 +283,5 @@
         </plugins>
 
     </build>
-
 
 </project>
